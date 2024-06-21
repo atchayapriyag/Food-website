@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Food</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!----navbar-->
+     <nav class="bg-gray-950 py-4">
+    <div class="2xl:container mx-auto grid grid-cols-1 md:grid-cols-2">
+        <!-- Logo -->
+        <a href="#" class="text-white text-2xl flex-cols justify-center m-6 items-center font-bold">Eatfresh
+<span class="text-yellow-400">...</span></a>
+
+        <!-- Menu Icon (Mobile) -->
+        <div class="block lg:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M4 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 5h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 5h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="hidden lg:flex lg:items-center lg:w-auto" id="menu">
+            <ul class="text-white text-lg font-semibold lg:flex">
+                <li class="m-4"><a href="#why choose us" class="hover:text-yellow-400">Why Choose Us?</a></li>
+                <li class="m-4"><a href="#Explore menu" class="hover:text-yellow-400">Explore Menu</a></li>
+                <li class="m-4"><a href="#Delivery&payment" class="hover:text-yellow-400">Delivery & Payment</a></li>
+                <li class="m-4"><a href="#Follow us" class="hover:text-yellow-400">Follow Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Script for Menu Toggle (Mobile) -->
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.getElementById('menu').classList.toggle('hidden');
+    });
+</script>
+
+<!---hero section-->
+    <section class="bg-food">
+      <div class="2xl:container h-[100%]">
+        <div class="w-[90%] mx-auto grid grid-cols-1 h-[100%]">
+            <div class="flex flex-col justify-center items-center gap-4">
+                <h1 class="text-white text-6xl">Get Delicious Food Anytime</h1>
+                <p class="text-white text-xl">Eat Smart & Healthy</p>
+                <div>
+            <button class="text-white bg-yellow-400 rounded-xl px-8 py-4">View Menu</button>
+            <button class=" text-white bg-transparent border border-[#d0b200] rounded-x1 px-8 py-4">Order Menu</button>
+           </div>
+         </div>
+        </div>
+     </div>
+    </section>
+    <!---why choose us-->
+    <section class=" bg-[#f9fbfe] py-5">
+        <div  class="2xl:container my-4">
+            <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                 <h1 class="text-[#183b56] text-3xl font-['poppins']">Why Choose Us?</h1>
+                 <p class="text-sm">We use both original receips and classic version of famous food items.</p>
+                </div>
+             </div>
+             <div class="2xl:container my-4">
+                <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-white flex flex-col items-center rounded-lg p-2">
+                    <img src="https://ik.imagekit.io/aw0yzgyse/food%20service%201.jpg?updatedAt=1711528249368" alt="food-service"/>
+                    <p class="text-center">Food Service</p>
+                    <p class="text-center">Experience fine dining at the comford of your home.All our orders are carefully packed and arrange to give you the nothing less than perfect.</p>
+                </div>
+                 <div class="bg-white flex flex-col items-center rounded-lg p-2">
+                    <img src="https://ik.imagekit.io/aw0yzgyse/food%20fresh.jpg?updatedAt=1711531377321" alt="food-service"/>
+                    <p class="text-center">Fresh Food</p>
+                    <p class="text-center">The Fresh Food group provides fresh-cut fruits and vegetables directly picked from our partner farms ans farm houses so that you always get them tree to plate.</p>
+                </div>
+                <div class="bg-white flex flex-col items-center rounded-lg p-2 ">
+                    <img src="https://ik.imagekit.io/aw0yzgyse/food%20service%201.jpg?updatedAt=1711528249368" alt="food-service"/>
+                    <p class="text-center">Best Offers</p>
+                    <p class="text-center">Food coupons&offers upto 50% OFF and Exclusive promo codes an All online food orders.</p>
+                 </div>
+              </div>
+           </div>
+       </div>
+    </div>
+    </section>
+    <!---Explore menu -->
+    <section class="bg-[#f9fbfe] py-5">
+        <div class="2xl:container my-4">
+            <div class="w-[90%] mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div>
+                    <h1 class="text-[#183b56] text-3xl">Explore Menu</h1>
+                </div>
+            </div>
+
+             <div class="2xl:container">
+                <div class="w-[90%] mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="bg-white flex flex-col items-center p-4 rounded-lg space-y-2 shadow-lg">
+                    <img src="https://ik.imagekit.io/aw0yzgyse/chicken.jpg?updatedAt=1711546757080" alt="Biriyani" class="rounded-3xl w-[100%]"/>
+                    <p class="">Non-Veg</p>
+                    <p class="">View All</p>
+                </div>
+
+                <div class="bg-white flex flex-col items-center p-4 rounded-lg space-y-2 shadow-lg">
+                    <img src="https://ik.imagekit.io/aw0yzgyse/tomato-soup.jpg?updatedAt=1712738224822" alt="Biriyani" class="rounded-3xl w-[100%]"/>
+                    <p class="">Soups</p>
+                    <p class="">View All</p>
+                </div>
+
+               <div class="bg-white  flex flex-col items-center p-4 rounded-lg space-y-2 shadow-lg">
+                    <img src="https://ik.imagekit.io/aw0yzgyse/food%20fresh.jpg?updatedAt=1711531377321" alt="Biriyani" class="rounded-3xl w-[100%]"/>
+                    <p class="">non veg-veg</p>
+                    <p class="">View All</p>
+                </div>
+
+               <div class="bg-white flex flex-col items-center p-4 rounded-lg space-y-2 shadow-lg ">
+                    <img src="https://ik.imagekit.io/aw0yzgyse/thai-food-spicy-mixed-seafood-salad.jpg?updatedAt=1712738973661" alt="Biriyani" class="rounded-3xl w-[100%]"/>
+                    <p class="">Sea food</p>
+                    <p class="">View All</p>
+               </div>
+
+              <div class="bg-white flex flex-col items-center p-4 rounded-lg space-y-2 shadow-lg">
+                    <img src="https://ik.imagekit.io/aw0yzgyse/noodles.jpg?updatedAt=1712738006064" alt="Biriyani" class="rounded-3xl w-[100%]"/>
+                    <p class="">Noodles</p>
+                    <p class="">View All</p>
+                </div>
+
+              <div class="bg-white flex flex-col items-center p-4 rounded-lg space-y-2 shadow-lg">
+                    <img src="https://ik.imagekit.io/aw0yzgyse/front-view-meat-sauce-soup-with-greens.jpg?updatedAt=1712739260124" alt="Biriyani" class="rounded-3xl w-[100%]"/>
+                    <p class="">chicken</p>
+                    <p class="">View All</p>
+                </div>
+
+             <div class="bg-white flex flex-col items-center p-4 rounded-lg space-y-2 shadow-lg">
+                    <img src="https://ik.imagekit.io/aw0yzgyse/flat-lay-coffee-flavored-ice-cream.jpg?updatedAt=1712738940006" alt="Biriyani" class="rounded-3xl w-[100%]"/>
+                    <p class="">ice cream</p>
+                    <p class="">View All</p>
+                </div>
+
+             <div class="bg-white flex flex-col items-center p-4 rounded-lg space-y-2 shadow-lg">
+                    <img src="https://ik.imagekit.io/aw0yzgyse/composition-fruit-juices.jpg?updatedAt=1712737939264" alt="Biriyani" class="rounded-3xl w-[100%]"/>
+                    <p class="">fresh juice</p>
+                    <p class="">View All</p>
+                </div>
+              </div>
+             </div>
+            </div>
+     </section>
+     <!---Delivery payment-->
+     <section class="py-5">
+        <div class="2xl:container">
+            <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+            <div class="space-y-4 order-2 md:order-1">
+                <h1 class="text-[#183b56] text-3xl">Delivery and Payment</h1>
+                <p class="text-black text-sm">Cash on Delivery, payment on delivery, or collect on delivery is a built-in manual payment method that allows buyers to pay for their orders at the time of delivery. Though the name implies cash, buyers can pay for their orders with their preferred payment methods like card or check payment, bank transfer, etc.</p>
+                <button class="bg-yellow-400 rounded-xl text-white px-6 py-3">Order Now</button>
+                <div class="flex flex-row gap-4">
+                    <img src=" https://ik.imagekit.io/aw0yzgyse/visa.jpg?updatedAt=1711554772041" alt="card-img" class="h-10"/>
+                    <img src="https://ik.imagekit.io/aw0yzgyse/visa.jpg?updatedAt=1711554772041 " alt="card-img" class="h-10"/>
+                    <img src=" https://ik.imagekit.io/aw0yzgyse/visa.jpg?updatedAt=1711554772041" alt="card-img" class="h-10"/>
+                    <img src=" https://ik.imagekit.io/aw0yzgyse/visa.jpg?updatedAt=1711554772041" alt="card-img" class="h-10"/>
+         </div>
+     </div>
+         <div class="flex flex-col justify-center items-center  md:order-2">
+            <img src="https://ik.imagekit.io/aw0yzgyse/offers.jpg?updatedAt=1711531399775 " alt="offer-image" class="h-48"/>
+            </div>
+        </section>
+        <!----Thank you section-->
+        <section class=" bg-[#faf7e5] py-5">
+            <div class="2xl:container">
+                <div class="w-[90%] mx-auto grid grid-cols-2">
+                    <div class="space-y-4 order-2 md:order-1 ">
+                        <h1 class="text-2xl ">Thank You for being a valuable customer to Us</h1>
+                        <p class="text[#afbbc4]">We have a surprise gift for you</p>
+                        <button class="bg-yellow-400 rounded-xl text-white px-8 py-4">Redeem Gift</button>
+                    </div>
+                    <div class="flex flex-col justify-center items-center  order-1 md:order-2">
+                      <img src="https://ik.imagekit.io/aw0yzgyse/giftimg.jpg?updatedAt=1711614041860" alt="gift-img" class="h-20"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---follow us-->
+        <section>
+            <div class="2xl:container  py-5">
+                <div class="w-[90%] mx-auto grid grid-cols-1 gap-4">
+                    <div class="flex flex-row justify-center items-center">
+                        <h1 class="text-black text-3xl">Follow Us</h1>
+                </div>
+                    <div class="flex flex-row gap-5  justify-center items-center">
+                     <svg
+      viewbox="0 0 24 24"
+      fill="currentColor"
+      height="1em"
+      width="1em" >
+      <path d="M11.999 7.377a4.623 4.623 0 100 9.248 4.623 4.623 0 000-9.248zm0 7.627a3.004 3.004 0 110-6.008 3.004 3.004 0 010 6.008z" />
+      <path d="M17.884 7.207 A1.078 1.078 0 0 1 16.806 8.285 A1.078 1.078 0 0 1 15.728000000000002 7.207 A1.078 1.078 0 0 1 17.884 7.207 z" />
+      <path d="M20.533 6.111A4.605 4.605 0 0017.9 3.479a6.606 6.606 0 00-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 00-2.184.42 4.6 4.6 0 00-2.633 2.632 6.585 6.585 0 00-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 002.634 2.632 6.584 6.584 0 002.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 002.186-.419 4.613 4.613 0 002.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 00-.421-2.217zm-1.218 9.532a5.043 5.043 0 01-.311 1.688 2.987 2.987 0 01-1.712 1.711 4.985 4.985 0 01-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 01-1.669-.311 2.985 2.985 0 01-1.719-1.711 5.08 5.08 0 01-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 01.311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 011.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 011.67.311 2.991 2.991 0 011.712 1.712 5.08 5.08 0 01.311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z" />
+    </svg>
+
+           <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      height="1em"
+      width="1em">
+      <path fill="none" d="M0 0h24v24H0z" />
+      <path d="M14 19h5V5H5v14h7v-5h-2v-2h2v-1.654c0-1.337.14-1.822.4-2.311A2.726 2.726 0 0113.536 6.9c.382-.205.857-.328 1.687-.381.329-.021.755.005 1.278.08v1.9H16c-.917 0-1.296.043-1.522.164a.727.727 0 00-.314.314c-.12.226-.164.45-.164 1.368V12h2.5l-.5 2h-2v5zM4 3h16a1 1 0 011 1v16a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1z" />
+    </svg>
+       
+     <svg fill="none" viewBox="0 0 15 15" height="1em" width="1em" {...props}>
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M7.233 4.696c0-1.727 1.4-3.127 3.127-3.127 1.014 0 1.823.479 2.365 1.175a5.246 5.246 0 001.626-.629 2.634 2.634 0 01-1.148 1.45l.002.003a5.26 5.26 0 001.5-.413l-.001.002c-.337.505-.76.95-1.248 1.313.026.177.04.354.04.53 0 3.687-2.809 7.975-7.975 7.975a7.93 7.93 0 01-4.296-1.26.5.5 0 01-.108-.748.45.45 0 01.438-.215c.916.108 1.83-.004 2.637-.356a3.086 3.086 0 01-1.69-1.876.45.45 0 01.103-.448 3.07 3.07 0 01-1.045-2.31v-.034a.45.45 0 01.365-.442 3.068 3.068 0 01-.344-1.416c0-.468.003-1.058.332-1.59a.45.45 0 01.323-.208.5.5 0 01.538.161 6.964 6.964 0 004.46 2.507v-.044zm-1.712 7.279a6.936 6.936 0 01-2.249-.373 5.318 5.318 0 002.39-1.042.45.45 0 00-.27-.804 2.174 2.174 0 01-1.714-.888c.19-.015.376-.048.556-.096a.45.45 0 00-.028-.876 2.18 2.18 0 01-1.644-1.474c.2.048.409.077.623.084a.45.45 0 00.265-.824A2.177 2.177 0 012.48 3.87c0-.168.003-.317.013-.453a7.95 7.95 0 005.282 2.376.5.5 0 00.513-.61 2.127 2.127 0 012.071-2.614c1.234 0 2.136 1.143 2.136 2.432 0 3.256-2.476 6.974-6.975 6.974z"
+        clipRule="evenodd"
+      />
+    </svg>
+</div>
+  </div>
+ </section>
+
+ <!-----Foooter-->
+   <footer>
+    <div class="2xl:container  bg-gray-100 py-5">
+        <div class="w-[90%] mx-auto grid grid-cols-1 gap-4">
+         <div class=" flex flex-col justify-center items-center gap-4">
+           <img src="https://ik.imagekit.io/aw0yzgyse/eat%20fresh.jpg?updatedAt=1711616514012" alt="logo-img" class="h-13"/>
+          <div class="flex flex-col justify-center items-center">
+             <p class="text-black text-sm">Thefood@food.com</p>
+            <p class="text-black text-sm">1234 annaNagar,chennai-600028</p>
+          </div>
+         </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
